@@ -12,6 +12,7 @@
 		38EFE8D11F0AEFFA00133B06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38EFE8CF1F0AEFFA00133B06 /* Main.storyboard */; };
 		38EFE8D31F0AEFFA00133B06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38EFE8D21F0AEFFA00133B06 /* Assets.xcassets */; };
 		38EFE8D61F0AEFFA00133B06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38EFE8D41F0AEFFA00133B06 /* LaunchScreen.storyboard */; };
+		F56A312EADDDD59FA6BA4958 /* Pods_Days_to_Coachella.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC608C0407FA9D6CA0C2FA39 /* Pods_Days_to_Coachella.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		38EFE8D21F0AEFFA00133B06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38EFE8D51F0AEFFA00133B06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38EFE8D71F0AEFFA00133B06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81694F822F2532019F7910A3 /* Pods-Days to Coachella.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Days to Coachella.release.xcconfig"; path = "Pods/Target Support Files/Pods-Days to Coachella/Pods-Days to Coachella.release.xcconfig"; sourceTree = "<group>"; };
+		85334AA1EA7CA6369D680981 /* Pods-Days to Coachella.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Days to Coachella.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Days to Coachella/Pods-Days to Coachella.debug.xcconfig"; sourceTree = "<group>"; };
+		AC608C0407FA9D6CA0C2FA39 /* Pods_Days_to_Coachella.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Days_to_Coachella.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F56A312EADDDD59FA6BA4958 /* Pods_Days_to_Coachella.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09EF9032AC018CE8A8904984 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85334AA1EA7CA6369D680981 /* Pods-Days to Coachella.debug.xcconfig */,
+				81694F822F2532019F7910A3 /* Pods-Days to Coachella.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1B4AA5D48DF22071F85A944C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC608C0407FA9D6CA0C2FA39 /* Pods_Days_to_Coachella.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		38EFE8BF1F0AEFFA00133B06 = {
 			isa = PBXGroup;
 			children = (
 				38EFE8CA1F0AEFFA00133B06 /* Days to Coachella */,
 				38EFE8C91F0AEFFA00133B06 /* Products */,
+				09EF9032AC018CE8A8904984 /* Pods */,
+				1B4AA5D48DF22071F85A944C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38EFE8DA1F0AEFFA00133B06 /* Build configuration list for PBXNativeTarget "Days to Coachella" */;
 			buildPhases = (
+				3D8331DD9C68E95E58486DBB /* [CP] Check Pods Manifest.lock */,
 				38EFE8C41F0AEFFA00133B06 /* Sources */,
 				38EFE8C51F0AEFFA00133B06 /* Frameworks */,
 				38EFE8C61F0AEFFA00133B06 /* Resources */,
+				216CA9F5DADDBCD33AB1BD50 /* [CP] Embed Pods Frameworks */,
+				6E912F34944B97CF05094D81 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		216CA9F5DADDBCD33AB1BD50 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Days to Coachella/Pods-Days to Coachella-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D8331DD9C68E95E58486DBB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6E912F34944B97CF05094D81 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Days to Coachella/Pods-Days to Coachella-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		38EFE8C41F0AEFFA00133B06 /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		38EFE8DB1F0AEFFA00133B06 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85334AA1EA7CA6369D680981 /* Pods-Days to Coachella.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N3VBXEQWW6;
@@ -272,6 +348,7 @@
 		};
 		38EFE8DC1F0AEFFA00133B06 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81694F822F2532019F7910A3 /* Pods-Days to Coachella.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N3VBXEQWW6;
